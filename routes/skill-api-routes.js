@@ -41,3 +41,17 @@ var hasType = {
       if (error) throw new Error(error);
       console.log(body);
   });
+
+  var partOf = {
+    method: 'GET',
+    url: 'https://wordsapiv1.p.rapidapi.com/words/' + skill + '/partOf',
+    headers: {
+      'x-rapidapi-host': 'wordsapiv1.p.rapidapi.com',
+      'x-rapidapi-key': 'a5431a964dmsh3fe2f2b97c70f4ep1c2083jsnb0757f5b9779',
+      useQueryString: true
+    }
+  };
+  request(partOf, function (error, response, body) {
+      if (error) throw new Error(error);
+      console.log(body);
+  });
