@@ -1,6 +1,8 @@
 // Requiring our models
 var db = require("../models");
 
+//is type of
+
 var request = require("request");
 var skill = skill;
 var typeOf = {
@@ -24,7 +26,6 @@ module.exports = function(app) {
 
 
 
-    // is type of 
     // has type of
 
 }
@@ -42,6 +43,9 @@ var hasType = {
       console.log(body);
   });
 
+
+  //part of search query
+  
   var partOf = {
     method: 'GET',
     url: 'https://wordsapiv1.p.rapidapi.com/words/' + skill + '/partOf',

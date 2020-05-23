@@ -2,11 +2,20 @@
   <div class="form-row">
     <div class="form-group col-md-6">
       <label for="inputEmail4">Email</label>
-      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+      <input type="email" class="form-control" id="inputEmailSen" placeholder="Email">
     </div>
     <div class="form-group col-md-6">
       <label for="inputPassword4">Password</label>
-      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+      <input type="password" class="form-control" id="inputPwSen" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+
+{{! --name submission-- }}
+ <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputName4">Name</label>
+      <input type="name" class="form-control" id="nameSen" placeholder="Last, First">
     </div>
   </div>
   <div class="form-group">
@@ -20,12 +29,12 @@
 {{!-- Add Bio --}}
 <div class="form-group">
     <label for="exampleFormControlTextarea1">Add Bio</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    <textarea class="form-control" id="bioSen" rows="3"></textarea>
   </div>
 </form>
 {{!-- Checkbox for geolocate permission --}}
     <div class="form-check">
-      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <input class="form-check-input" type="checkbox" id="geoCheck">
       <label class="form-check-label" for="gridCheck">
         Use my current location
       </label>
@@ -66,12 +75,12 @@
       <span class="sr-only">Toggle Dropdown</span>
     </button>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="#">Interest</a>
-      <a class="dropdown-item" href="#">Skill</a>
+      <a class="dropdown-item" id= '#interestSen' href="#">Interest</a>
+      <a class="dropdown-item" id= '#skillSen' href="#">Skill</a>
     </div>
   </div>
 </div>
 
 </div>
-  <button type="submit" class="btn btn-primary">Sign up</button>
+  <button type="submit" id= "senseiSign" class="btn btn-primary">Sign up</button>
 </form>
