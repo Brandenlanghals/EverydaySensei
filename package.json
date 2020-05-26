@@ -1,18 +1,20 @@
 {
-    "name": "everyday_sensei",
-    "version": "1.0.0",
-    "description": "-Node \r -Express \r -MySQL \r -Handlebars \r -Jquery",
-    "main": "server.js",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-      "express": "^4.16.3",
-      "express-handlebars": "^3.0.0",
-      "mysql": "^2.16.0",
-      "body-parser": "^1.15.2",
-      "method-override": "^2.3.6"
-    }
+  "name": "everyday_sensei",
+  "version": "1.0.0",
+  "description": "-Node \r -Express \r -MySQL \r -Handlebars \r -Jquery",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "method-override": "^2.3.6",
+    "mysql": "^2.16.0",
+    "mysql2": "^2.1.0",
+    "sequelize": "^5.21.11"
+  }
 }
