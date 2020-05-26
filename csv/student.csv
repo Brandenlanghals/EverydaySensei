@@ -1,9 +1,9 @@
-id|name|geo_coordinates|email|bio|skill_level|credits
+id|name|geo_coordinates|email|bio|skill_level|credits|skill_id
 16880510 0982|Webster, Alexa B.|-62.985, 24.00479|pharetra.Quisque@Nulla.edu|Lorem ipsum dolor sit|2|99
 16601222 8257|Carney, Nigel Z.|-30.64979, -91.81641|sed@nequeet.co.uk|Lorem ipsum dolor sit amet,|10|98
-16201220 8167|Vaughn, Juliet D.|47.57972, -97.0232|Etiam.laoreet@nectempus.co.uk|Lorem ipsum|9|220
+16201220 8167|Vaughn, Juliet D.|47.57972, -97.0232|Etiam.laoreet@nectempus.co.uk|Lorem ipsum|9|220|furniture making
 16681116 8951|Douglas, Hasad A.|-60.92224, -177.48889|Vestibulum.ante@elitEtiamlaoreet.edu|Lorem ipsum dolor sit amet, consectetuer|9|123
-16320821 3029|Middleton, Sylvester V.|-10.28478, -100.49829|mus.Proin@mollisneccursus.ca|Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur|9|44
+16320821 3029|Middleton, Sylvester V.|-10.28478, -100.49829|mus.Proin@mollisneccursus.ca|Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur|9
 16080216 0416|Hurley, Sopoline Y.|-26.13045, 148.2768|Proin.eget@natoquepenatibus.net|Lorem|1|58
 16330112 3620|Owen, Briar E.|68.46517, 100.17982|placerat.Cras@magnis.co.uk|Lorem ipsum dolor sit amet,|4|100
 16100411 3286|Munoz, Hamilton K.|-77.34557, -77.15135|In.tincidunt@nonhendreritid.edu|Lorem ipsum dolor sit amet, consectetuer adipiscing elit.|8|95

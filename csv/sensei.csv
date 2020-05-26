@@ -1,4 +1,4 @@
-id|name|geo_coordinates|email|bio|skill_level|credits|rating
+id|name|geo_coordinates|email|bio|skill_level|credits|rating|skills|interests
 16820228 9511|Mathews, Beatrice Q.|-22.30476, -22.07768|tempus.non.lacinia@vestibulummassa.ca|Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur|8|205|6
 16640408 0357|Holder, Chanda X.|0.48729, 168.6235|senectus.et@lacusAliquam.net|Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sed|3|49|2
 16450207 1675|Roman, Charissa Z.|45.92444, 72.57467|ipsum.primis.in@orciquislectus.co.uk|Lorem|10|49|4
