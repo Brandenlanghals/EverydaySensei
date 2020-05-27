@@ -1,16 +1,17 @@
 module.exports = function(sequelize, DataTypes) {
     var Student = sequelize.define("Student", {
       // Giving the Student model a name of type STRING
-      id: DataTypes.INT,
+      // id: DataTypes.INTEGER,
       name: DataTypes.STRING,
       geo_coordinates: DataTypes.STRING,
       email: DataTypes.STRING,
       bio: DataTypes.STRING,
-      skill_level: DataTypes.INT,
-      credits: DataTypes.INT,
+      skill_level: DataTypes.INTEGER,
+      credits: DataTypes.INTEGER,
       profile_photo: DataTypes.STRING.BINARY,
       interests: DataTypes.STRING,
-      skill_id: DataTypes.INT
+      skill_id: DataTypes.INTEGER,
+      primaryKey: true
     });
 
  // Associating Student with Sensei

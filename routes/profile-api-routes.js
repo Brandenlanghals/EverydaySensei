@@ -1,5 +1,6 @@
 // Requiring our models
-var db = require("../models");
+var db = require("../models/sensei");
+// var studentProfile = require("../models/student");
 
 // Routes
 // =============================================================

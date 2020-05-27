@@ -1,9 +1,10 @@
 module.exports = function(sequelize, DataTypes) {
     var SenseiStudentJoin = sequelize.define("SenseiStudentJoin", {
       // Giving the Author model a name of type STRING
-      id: DataTypes.INT,
-      student_id: DataTypes.INT,
-      sensei_id: DataTypes.INT,
+      // id: DataTypes.INTEGER,
+      student_id: DataTypes.INTEGER,
+      sensei_id: DataTypes.INTEGER,
+      primaryKey: true
 
     });
   // Associating Sensei 
