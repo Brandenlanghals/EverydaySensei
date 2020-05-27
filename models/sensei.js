@@ -39,13 +39,8 @@ var sequelize = require("../config/connection.js");
       }
 
     });
-      // rating: DataTypes.INTEGER,
-      // profile_photo: DataTypes.STRING.BINARY,
-      // interests: DataTypes.STRING,
-      // skill_id: DataTypes.INTEGER,
-      // primaryKey: true
+    
    
-
     Sensei.sync();
   //Associating Sensei with Student
     Sensei.associate = function(models) {

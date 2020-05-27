@@ -1,9 +1,18 @@
-module.exports = function(sequelize, DataTypes) {
+// Dependencies
+// =============================================================
+var Sequelize = require("sequelize");
+
+// Require the sequelize library
+var sequelize = require("../config/connection.js");
+
     var SenseiStudentJoin = sequelize.define("SenseiStudentJoin", {
-      // Giving the Author model a name of type STRING
-      // id: DataTypes.INTEGER,
-      student_id: DataTypes.INTEGER,
-      sensei_id: DataTypes.INTEGER,
+      
+      student_id: {
+        type: Sequelize.INTEGER
+      },
+      sensei_id:{
+        type: Sequelize.INTEGER
+      },
       primaryKey: true
 
     });
@@ -13,5 +22,4 @@ module.exports = function(sequelize, DataTypes) {
       SenseiStudentJoin.belongsTo(models.Sensei);
     };
   
-    return SenseiStudentJoin;
-  };
+   SenseiStudentJoin.sync();
