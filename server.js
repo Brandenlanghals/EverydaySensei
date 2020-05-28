@@ -15,6 +15,11 @@ var PORT = process.env.PORT || 8080;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+//Set Handlebars
+var exphbs = require("express-handlebars");
+app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+app.set("view engine", "handlebars");
+
 // Static directory
 app.use(express.static("public"));
 
@@ -23,8 +28,8 @@ app.use(express.static("public"));
 // require("./routes/html-routes.js")(app);
 require("./routes/profile-api-routes.js")(app);
 require("./routes/sensei-api-routes.js")(app);
-require("./routes/skill-api-routes.js")(app);
-require("./routes/student-api-routes.js")(app);
+// require("./routes/skill-api-routes.js")(app);
+// require("./routes/student-api-routes.js")(app);
 
 // Syncing our sequelize models and then starting our Express app
 // =============================================================
