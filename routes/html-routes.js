@@ -1,5 +1,5 @@
 // *********************************************************************************
-// html-routes.js - this file offers a set of routes for sending users to the various html pages
+// html-routes.js - this file offers a set of routes for sending users to the various handlebar pages
 // *********************************************************************************
 
 // Dependencies
@@ -10,21 +10,21 @@ var path = require("path");
 // =============================================================
 module.exports = function(app) {
 
-  // Each of the below routes just handles the HTML page that the user gets sent to.
+  // Using handlebars, each of the below routes handles the page that the user gets sent to.
 
-  // index route loads view.html
+  // index route loads index.handlebars
   app.get("/", function(req, res) {
     res.sendFile(path.join(__dirname, "../views/index.handlebars"));
   });
 
-  // cms route loads cms.html
-  app.get("/cms", function(req, res) {
-    res.sendFile(path.join(__dirname, "../views/index.handlebars"));
+  // profile route for profile.handlebars
+  app.get("/profile", function(req, res) {
+    res.sendFile(path.join(__dirname, "../views/profile.handlebars"));
   });
 
-  // blog route loads blog.html
-  app.get("/blog", function(req, res) {
-    res.sendFile(path.join(__dirname, ""));
+  //login page route for login.handlebars
+  app.get("/login", function(req, res) {
+    res.sendFile(path.join(__dirname, "../views/login.handlebars"));
   });
 
   // authors route loads author-manager.html
