@@ -14,17 +14,26 @@ module.exports = function(app) {
 
   // index route loads index.handlebars
   app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "../views/index.handlebars"));
+    res.render("index.handlebars");
   });
 
   // profile route for profile.handlebars
   app.get("/profile", function(req, res) {
-    res.sendFile(path.join(__dirname, "../views/profile.handlebars"));
+    res.render("profile.handlebars");
   });
 
   //login page route for login.handlebars
   app.get("/login", function(req, res) {
-    res.sendFile(path.join(__dirname, "../views/login.handlebars"));
+    res.render("login.handlebars");
   });
+
+  app.get("/sensei", function(req, res) {
+    res.render("sensei.handlebars");
+  });
+
+  app.get("/student", function(req, res) {
+    res.render("student.handlebars");
+  });
+
 
 };
