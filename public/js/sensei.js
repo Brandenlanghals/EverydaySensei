@@ -39,7 +39,8 @@ $(document).ready(function () {
         };
 
         submitSensei(newSensei);
-
+        
+        location.replace("../../views/profile.handlebars");
     };
 });
 

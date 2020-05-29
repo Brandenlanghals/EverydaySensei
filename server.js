@@ -24,7 +24,7 @@ app.set("view engine", "handlebars");
 var db = require("./models/sensei");
 
 // Static directory
-app.use(express.static("/public"));
+app.use(express.static("/public/"));
 
 // Routes
 // =============================================================
