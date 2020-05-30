@@ -18,7 +18,7 @@ module.exports = function(app) {
           });
         });
 
-    app.get("api/sensei", function(req, res) {
+    app.get("/api/sensei", function(req, res) {
         teacher.sensei.findAll({
             }).then(function(teachersensei) {
                 res.json(teachersensei);
@@ -28,7 +28,7 @@ module.exports = function(app) {
     // POST route for saving a new post
     app.post("/api/sensei", function(req, res) {
         teacher.sensei.create(req.body).then(function(teachersensei) {
-            res.json(dbsensei);
+            res.json(teachersensei);
             });
         });   
     //PUT route for updating information
