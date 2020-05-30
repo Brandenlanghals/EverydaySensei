@@ -7,7 +7,7 @@ var sensei = require("../models/sensei");
 
 // Create all our routes and set up logic within those routes where required.
 router.get("/", function(req, res) {
-    cat.all(function(data) {
+    sensei.all(function(data) {
       var hbsObject = {
         sensei: data
       };
@@ -17,13 +17,14 @@ router.get("/", function(req, res) {
   });
   
   router.post("/api/sensei", function(req, res) {
-    teacher.sensei.create(req.body).then(function(teachersensei) {
+    sensei.create(req.body).then(function(teachersensei) {
+        console.log(teachersensei);
         res.json(teachersensei);
         });
     });   
   
     router.put("/api/sensei", function(req, res) {
-        teacher.sensei.update(
+        sensei.update(
         req.body,
         {
             where: {

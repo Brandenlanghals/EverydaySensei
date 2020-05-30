@@ -10,6 +10,13 @@ var express = require("express");
 // =============================================================
 var app = express();
 var PORT = process.env.PORT || 8080;
+var path = require("path");
+
+//Controller Variables
+var senseiController = require("./controller/senseiController");
+// var senseiStudentJoinTableController = require("./controller/senseiStudentJoinTableController");
+// var skillController = require("./controller/skillController");
+var studentController = require("./controller/studentController");
 
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
@@ -24,15 +31,15 @@ app.set("view engine", "handlebars");
 var db = require("./models/sensei");
 
 // Static directory
-app.use(express.static("/public/"));
+app.use("/public", express.static(path.join(__dirname, 'public')));
 
 // Routes
 // =============================================================
 require("./routes/html-routes")(app);
-// require("./routes/profile-api-routes.js")(app);
-// require("./routes/sensei-api-routes.js")(app);
-// require("./routes/skill-api-routes.js")(app);
-// require("./routes/student-api-routes.js")(app);
+app.use("/", senseiController);
+// app.use("/", senseiStudentJoinTableController);
+// app.use("/", skillController);
+app.use("/", studentController);
 
 // Syncing our sequelize models and then starting our Express app
 // =============================================================

@@ -15,7 +15,7 @@ module.exports = function(app) {
   // index route loads index.handlebars
   app.get("/", function(req, res) {
     res.render("index.handlebars");
-  });
+  }); 
 
   // profile route for profile.handlebars
   app.get("/profile", function(req, res) {

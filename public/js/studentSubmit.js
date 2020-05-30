@@ -3,25 +3,21 @@ $(document).ready(function () {
     var interestStu = $("#interestStu");
     var nameStu = $("#nameStu");
     var emailStu = $("#inputEmailStu");
-    var pwStu = $("#inputPWStu");
+    var pwStu = $("#inputPwStu");
     var bioStu = $("#bioStu");
 
     //adding an event listener when profile is created (on submit button)
-    $().on("submit", handleFormSubmit);
-    function handleFormSubmit(event) {
+    $("#studentSign").click(function() {
+        alert("Handler for .click() called.");
         event.preventDefault();
-        // Wont submit the post if we are missing any of the required inputs
-        if (!nameStu.val().trim() || !bioStu.val().trim() || !pwStu.val().trim() || !emailStu.val() || !interestStu.val()) {
-            return;
-        }
-        //constructing a new sensei profile
+        //constructing a new student profile
         var newStudent = {
             name: nameStu
                 .val()
                 .trim(),
             bio: bioStu
-                .val()
-                .trim(),
+                .val(),
+                // .trim(),
             interest: interestStu
                 .val()
                 .trim(),
@@ -31,10 +27,20 @@ $(document).ready(function () {
             pw: pwStu
                 .val()
                 .trim(),
-            studentId: studentId.val()
-        };
+        
+        }
 
+        console.log(newStudent);
         submitStudent(newStudent);
+        // location.replace("/profile");
 
-    };
+        function submitStudent(student) {
+            $.ajax({
+                url: "/api/student",
+                type: "POST",
+                data: student
+            })
+        }
+
+      });
 });
