@@ -41,4 +41,5 @@ var sequelize = require("../config/connection.js");
  // Associating Student with Sensei
     Student.associate = function(models) {
         Student.belongsToMany(models.Sensei, { through: models.SenseiStudentJoin });    
+        Student.belongsTo(models.Skill); 
       };

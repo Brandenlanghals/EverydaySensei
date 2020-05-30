@@ -10,8 +10,11 @@ var sequelize = require("../config/connection.js");
       name: {
         type: Sequelize.STRING
       },
-      geo_coordinates: {
-        type: Sequelize.STRING
+      lat: {
+        type: Sequelize.FLOAT
+      },
+      long: {
+        type: Sequelize.FLOAT
       },
       email: {
         type: Sequelize.STRING
@@ -44,7 +47,8 @@ var sequelize = require("../config/connection.js");
     Sensei.sync();
   //Associating Sensei with Student
     Sensei.associate = function(models) {
-      Sensei.hasMany(models.Student, { through: models.SenseiStudentJoin });   
+      Sensei.hasMany(models.Student, { through: models.SenseiStudentJoin });
+      Sensei.belongsTo(models.Skill);   
     };
   
     module.exports = Sensei;
