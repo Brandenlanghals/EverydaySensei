@@ -9,7 +9,6 @@ $(document).ready(function () {
 
     //adding an event listener when profile is created (on submit button)
     $("#senseiSign").click(function() {
-        alert("Handler for .click() called.");
         event.preventDefault();
         var newSensei = {
             name: nameSen
@@ -42,7 +41,7 @@ $(document).ready(function () {
                 data: sensei
             })
         }
-
+        location.href = "/";
       });
 });
 
