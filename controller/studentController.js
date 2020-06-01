@@ -5,14 +5,13 @@ var router = express.Router();
 // Import the model (cat.js) to use its database functions.
 var student = require("../models/student");
 
-router.get("/", function(req, res) {
-  student.all(function(data) {
+router.get("/", function (req, res) {
+  student.all(function (data) {
     var hbsObject = {
-      sensei: data
+      sensei: data,
     };
     console.log(hbsObject);
     res.render("index", hbsObject);
-
   });
 });
 
@@ -35,7 +34,6 @@ router.post("/api/student", function (req, res) {
     console.log("student");
   });
 });
-
 
 // Export routes for server.js to use.
 module.exports = router;

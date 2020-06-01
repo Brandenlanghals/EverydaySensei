@@ -13,8 +13,8 @@ var sequelize = new Sequelize("user_profiles", "root", "ocemack10", {
   pool: {
     max: 5,
     min: 0,
-    idle: 10000
-  }
+    idle: 10000,
+  },
 });
 
 // Exports the connection for other files to use

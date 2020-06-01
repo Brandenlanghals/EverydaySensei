@@ -21,7 +21,7 @@ h1 {
 }
 #profile {
     display: block;
-    contents: fit-content;
+    /* contents: fit-content; */
    -ms-flex-preferred-size: 98%;
          flex-basis: 98%;
      display: -webkit-box;
