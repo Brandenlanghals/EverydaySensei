@@ -1,1 +1,3 @@
 # EverydaySensei
+
+A credit-based learning system where users can choose to be either: a sensei and volunteer their time to teach online classes, or a student and learn from others. User information is stored using SQL and populates the profile page by making calls to the database. The website utilizes two different API calls: Google Maps (for geolocation of the user), and a words association (for connection similar skills in a SQL database). The technology stack used in Everyday Sensei consists of: HTML, CSS, jQuery, SQL, Sequelize, and handlebars was used as our ORM. The main purpose of this project was to understand the Model, View, Controller system of website design and Everyday Sensei is an effective web based application that accomplishes the aforementioned.

@@ -7,6 +7,7 @@ var sequelize = require("../config/connection.js");
 // Require the connection to the database (connection.js)
 
     var Skill = sequelize.define("Skill", {
+<<<<<<< HEAD
       name: {
         type: Sequelize.STRING
       }
@@ -22,3 +23,12 @@ var sequelize = require("../config/connection.js");
   
     module.exports = Skill;
  
+=======
+      skill_id: {
+        type: Sequelize.INTEGER
+      }
+
+    });
+
+    Skill.sync();
+>>>>>>> 10d05aaa0e71e77ccd1033d1dfd2d856332756f8
