@@ -43,7 +43,7 @@ $ node server.js
 See contribution history [here](https://github.com/Brandenlanghals/EverydaySensei/graphs/contributors)
 
 ## Future Updates
-We would like to focus on the credit system allowing senseis to earn credits that can be redeemed to learn for free and be students. We would alos like to monetize the app by allowing credits to be purchased, allowing students to join classes. 
+We would like to focus on the credit system allowing Senseis to earn credits that can be redeemed to learn for free and be students. We would also like to monetize the app by allowing credits to be purchased, allowing students to join classes. 
 
 
 
