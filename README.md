@@ -6,3 +6,45 @@ The technology stack used in Everyday Sensei consists of: HTML, CSS, jQuery, SQL
 
 ![Landing](/images/landing.png)
 ![Profile Example](/images/profile.png)
+
+## Installing
+
+To run the app locally, you will first need to git clone the repository to your local machine. 
+
+HTTPS:
+````
+$ git clone https://github.com/Brandenlanghals/EverydaySensei.git
+````
+SSH:
+````
+$ git clone git@github.com:Brandenlanghals/EverydaySensei.git
+````
+
+Once cloned, cd into the repository and install the necessary dependencies by running:
+````
+$ npm install
+````
+
+You can then start the app locally by running: 
+````
+$ node server.js
+````
+
+## Built With
+
+* [Express.js](https://expressjs.com/) - Node.js framework
+* [jQuery](https://jquery.com/) - Front-end framework 
+* [Node.js](https://nodejs.org/en/) - JavaScript runtime
+* [npm](https://www.npmjs.com/) - Dependency management
+* [Bootstrap](https://getbootstrap.com/) - CSS framework
+* [Sequelize](https://sequelize.org/) - Sequelize ORM
+
+## Authors
+See contribution history [here](https://github.com/Brandenlanghals/EverydaySensei/graphs/contributors)
+
+## Future Updates
+We would like to focus on the credit system allowing senseis to earn credits that can be redeemed to learn for free and be students. We would alos like to monetize the app by allowing credits to be purchased, allowing students to join classes. 
+
+
+
+
